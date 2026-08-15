@@ -3,33 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-
     <title>RPG</title>
 </head>
 
 <body>
-
     <h1>⚔️ RPG</h1>
-    <p id="user">در حال بارگذاری...</p>
-
-    <script>
-        const tg = window.Telegram.WebApp;
-
-        tg.ready();
-        tg.expand();
-
-        const user = tg.initDataUnsafe.user;
-
-        if (user) {
-            document.getElementById("user").textContent =
-                "سلام " + (user.first_name || "بازیکن") + " 👋";
-        } else {
-            document.getElementById("user").textContent =
-                "سلام بازیکن 👋";
-        }
-    </script>
-
+    <p>Mini App با موفقیت اجرا شد.</p>
 </body>
 </html>
